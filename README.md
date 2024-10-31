@@ -35,23 +35,26 @@ This tutorial outlines the post-installation configuration of the open-source he
 
 <h2>Configuration Steps</h2>
 
+Copy this link to go to [osTicket](http://localhost/osTicket/scp/login.php) and login using your previously created credentials.
+
 <p>
 <img src="https://i.imgur.com/gAXVBO2.png" height="70%" width="70%" alt="Login to osTicket"/>	
 </p>
 
-Copy this link to go to [osTicket](http://localhost/osTicket/scp/login.php) and login using your previously created credentials.
-
-<img src="https://i.imgur.com/Jabe0zH.png" height="70%" width="70%" alt="Creating Super Admin Role"/>
 <p>
-Next, we will be creating roles in the "Admin Panel" for osTicket. Click the "Admin Panel" link at the top right to get started. If the link says "Agent Panel", then you are in the "Admin Panel".
-
-- From Agents Tab > Roles > Add New Role
-	- Name: Super Admin
-	- From Permissions Tab: Tick every permission from the Tickets, Tasks, and Knowledgebase tabs
-- Finally, Add That Role
+Next, we will be creating roles in the "Admin Panel" for osTicket. 
+From Agents Tab > Roles > Add New Role
 </p>
 
-<img src="https://i.imgur.com/sP2OpuV.png" height="70%" width="70%" alt="Creating System Administrators Department"/>
+<img src="https://i.imgur.com/EO6MFa6.png" height="70%" width="70%" alt="Add New Role"/>
+
+- We will be creating the Super Admin role. 
+- Name: Super Admin 
+- Permissions: Tick Every Permission 
+Finally, Select Add New Role
+
+<img src="https://i.imgur.com/Jabe0zH.png" height="70%" width="70%" alt="Creating Super Admin Role"/>
+
 <p>
 After creating the "Super Admin" role, we will be creating the "System Administrators" department
 
@@ -60,18 +63,8 @@ After creating the "Super Admin" role, we will be creating the "System Administr
 - Finally, press the "Create Dept" button
 </p>
 
+<img src="https://i.imgur.com/sP2OpuV.png" height="70%" width="70%" alt="Creating System Administrators Department"/>
 
-<img src="https://i.imgur.com/Jabe0zH.png" height="70%" width="70%" alt="Creating Super Admin Role"/>
-<p>
-Next, we will be creating roles in the "Admin Panel" for osTicket. Click the "Admin Panel" link at the top right to get started. If the link says "Agent Panel", then you are in the "Admin Panel".
-
-- From Agents Tab > Roles > Add New Role
-	- Name: Super Admin
-	- From Permissions Tab: Tick every permission from the Tickets, Tasks, and Knowledgebase tabs
-- Finally, Add That Role
-</p>
-
-<img src="https://i.imgur.com/StrMrvq.png" height="70%" width="70%" alt="Creating Level II Support Team"/>
 <p>
 Now, we will be creating a team. From the Agents Tab > Teams Tab, you will notice that theres a "Level I Support" team. We will be creating a "Level II Support" team. 
 
@@ -80,8 +73,8 @@ Now, we will be creating a team. From the Agents Tab > Teams Tab, you will notic
 - From the Members tab, add yourself in the Select Agent dropdown menu and click "Create Team". In this tutorial, I added "User Admin".
 </p>
 
+<img src="https://i.imgur.com/StrMrvq.png" height="70%" width="70%" alt="Creating Level II Support Team"/>
 
-<img src="https://i.imgur.com/6mMaTXw.png" height="70%" width="70%" alt="Allowing Tickets To Be Created By Anyone"/>
 <p>
 After these configuration steps, we will now set it such that anyone is allowed to create tickets.
 
@@ -89,7 +82,8 @@ After these configuration steps, we will now set it such that anyone is allowed 
 	- Ensure that "Registration Required" checkbox is UNCHECKED
 </p>
 
-<img src="https://i.imgur.com/YJsRxNp.png" height="70%" width="70%" alt="Creating Jane.Doe Agent"/>
+<img src="https://i.imgur.com/6mMaTXw.png" height="70%" width="70%" alt="Allowing Tickets To Be Created By Anyone"/>
+
 <p>
 Now we will be configuring agents.
 
@@ -100,8 +94,10 @@ Now we will be configuring agents.
 	- Username: jane.doe
 	- Set Password: Password1
 		- Untick the "Send the agent a password reset email" and "Require password change at next login" checkboxes 
-<img src="https://i.imgur.com/IJGJs5S.png" height="70%" width="70%" alt="Adding Access and Teams"/>
-	
+
+
+<img src="https://i.imgur.com/YJsRxNp.png" height="70%" width="70%" alt="Creating Jane.Doe Agent"/>
+
 - From the Access Tab in the Add New Agent form, add the following access
 	- Primary Department: System Administrators
 	- Role: Super Admin
@@ -111,7 +107,8 @@ Now we will be configuring agents.
 - Finally, hit the Create button
 </p>
 
-<img src="https://i.imgur.com/fGso8Oo.png" height="70%" width="70%" alt="Creating Agent John Doe"/>
+<img src="https://i.imgur.com/IJGJs5S.png" height="70%" width="70%" alt="Adding Access and Teams"/>
+	
 <p>
 Next, following the same steps, we will be creating John.
 	
@@ -125,7 +122,8 @@ Next, following the same steps, we will be creating John.
 - After that, hit "Create"
 </p>
 
-<img src="https://i.imgur.com/FdHL3zC.png" height="70%" width="70%" alt="Creating Users"/>
+<img src="https://i.imgur.com/fGso8Oo.png" height="70%" width="70%" alt="Creating Agent John Doe"/>
+
 <p>
 Now, we will be creating Users that will send tickets.
 	
@@ -139,7 +137,8 @@ Now, we will be creating Users that will send tickets.
 - After entring the credentials, hit "Add User" 
 </p>
 
-<img src="https://i.imgur.com/8hnGzzD.png" height="70%" width="70%" alt="Creating Service Level Agreements"/>
+<img src="https://i.imgur.com/FdHL3zC.png" height="70%" width="70%" alt="Creating Users"/>
+
 <p>
 After configuring the users, we will be creating Service Level Agreements (SLA)
 	
@@ -159,7 +158,8 @@ After configuring the users, we will be creating Service Level Agreements (SLA)
 - After entring a Service Level Agreement, hit "Add Plan" before creating your next SLA.
 </p>
 
-<img src="https://i.imgur.com/m6PLaAH.png" height="70%" width="70%" alt="Creating Help Topics"/>
+<img src="https://i.imgur.com/8hnGzzD.png" height="70%" width="70%" alt="Creating Service Level Agreements"/>
+
 <p>
 Finally, we will be creating Help Topics
 	
@@ -170,3 +170,6 @@ Finally, we will be creating Help Topics
 	- Password Reset
 - After creating a help topic, hit the "Save Changes" button before moving onto creating the next help topic
 </p>
+
+<img src="https://i.imgur.com/m6PLaAH.png" height="70%" width="70%" alt="Creating Help Topics"/>
+
